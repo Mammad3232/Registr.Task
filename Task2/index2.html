@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Contact</h1>
+
+        <form action="#" method="get">
+
+            <div class="form-group">
+                <label for="fname">First name</label>
+                <input type="text" id="fname" name="firstname">
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last name</label>
+                <input type="text" id="lname" name="lastname">
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="datetime-section">
+                <p class="main-label">Date and time</p>
+
+                <div class="datetime-grid">
+                    <div class="item">
+                        <label>Day</label>
+                        <input type="text" name="day">
+                    </div>
+
+                    <div class="item">
+                        <label>Month</label>
+                        <select name="month">
+                            <option value="" disabled selected></option>
+                            <option value="1">Yanvar</option>
+                            <option value="2">Fevral</option>
+                            <option value="3">Mart</option>
+                            <option value="4">Aprel</option>
+                            <option value="5">May</option>
+                            <option value="6">İyun</option>
+                            <option value="7">İyul</option>
+                            <option value="8">Avqust</option>
+                            <option value="9">Sentyabr</option>
+                            <option value="10">Oktyabr</option>
+                            <option value="11">Noyabr</option>
+                            <option value="12">Dekabr</option>
+                        </select>
+                    </div>
+
+                    <div class="item">
+                        <label>Year</label>
+                        <input type="text" name="year">
+                    </div>
+
+                    <div class="item">
+                        <label>Time</label>
+                        <input type="time" name="time">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Seating preference</label>
+                <div class="radio-group">
+                    <div class="radio-item">
+                        <input type="radio" name="seating" id="indoor" value="indoor">
+                        <label for="indoor">Indoor</label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" name="seating" id="outdoor" value="outdoor">
+                        <label for="outdoor">Outdoor</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="requests">Additional requests</label>
+                <input type="text" id="requests" name="requests">
+            </div>
+
+            <div class="newsletter">
+                <input type="checkbox" id="news" name="subscribe">
+                <label for="news">Yes, subscribe me to your newsletter.</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Request booking</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
